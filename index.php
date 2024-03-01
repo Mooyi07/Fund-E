@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fund-E | Login</title>
     <link rel="stylesheet" href="styles.scss">
-    <link rel="icon" href="assets/img/fundi logo.svg" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo.svg" type="image/x-icon">
 </head>
 <body>
 <main>
     <div class="content">
         <div class="logo-and-name">
-            <img id="logo" src="assets/img/fundi logo.svg">
+            <img id="logo" src="assets/img/logo.svg">
             <h1>Fund-e</h1>
         </div>
         <div class="slogan">

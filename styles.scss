@@ -1,27 +1,37 @@
+:root {
+    --green: #009E5F;
+    --white: #F9F6EE;
+    --black: #0E0E0E;
+}
 @font-face {
     font-family: "Arista 2.0";
-    src: url('assets/fonts/z-arista/Arista2.0/"Alternate light".ttf') format('truetype');
-    src: url('assets/fonts/z-arista/Arista2.0/"Alternate light".ttf') format('truetype');
-}
-* {
-    margin: 0;
-    padding: 0;
+    src: url('assets/fonts/z-arista/Arista2.0/Alternate light.ttf') format('truetype'), 
+         url('assets/fonts/z-arista/Arista2.0 light.ttf') format('truetype'),
+         url('assets/fonts/z-arista/Arista2.0_fat.ttf') format('truetype'),
+         url('assets/fonts/z-arista/Arista2.0.ttf') format('truetype'),
+         url('assets/fonts/z-arista/Arista2.0Alternate.ttf') format('truetype'),
+         url('assets/fonts/z-arista/Arista2.0Alternate_full.ttf') format('truetype'),
 }
 body {
+    padding: 0;
+    margin: 0;
     display: flex;
-
+    background-color: var(--black);
 }
 main {
     display: flex;
     width: 100%;
 }
 .content {
+    background-color: var(--black);
+    background-image: url(assets/img/bg-img.png);
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-wrap: wrap;
-    font-family: arista;
+    font-family: "Arista 2.0";
+    font-weight: bolder;
+    height: 100%;
     .logo-and-name {
-        background-image: ;
         display: flex;
         width: 100%;
         img {
@@ -32,6 +42,8 @@ main {
             margin-top: auto;
             margin-bottom: auto;
             justify-content: left;
+            font-size: 85px;
+            color: 
         }
     }
     .slogan {
@@ -42,5 +54,5 @@ main {
 }
 .login-form {
     display: flex;
-    width: 50%;
+    width: 100%;
 }

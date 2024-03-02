@@ -4,8 +4,24 @@
     --black: #0E0E0E;
 }
 @font-face {
-    font-family: "Arista 2.0";                 src: url('assets/fonts/z-arista/Arista2.0.ttf') format('truetype');
-    font-family: "Arista 2.0 Alternate";       src: url('assets/fonts/z-arista/Arista2.0Alternate.ttf') format('truetype');
+    font-family: "Arista 2.0 Alternate";    
+    src: url('assets/fonts/z-arista/Arista2.0Alternate.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Arista 2.0";              
+    src: url('assets/fonts/z-arista/Arista2.0.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Bold";          
+    src: url('assets/fonts/quicksand/Quicksand-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Semibold";      
+    src: url('assets/fonts/quicksand/Quicksand-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Light";      
+    src: url('assets/fonts/quicksand/Quicksand-Light.ttf') format('truetype');
 }
 body {
     padding: 0;
@@ -17,60 +33,106 @@ main {
     background-color: var(--black);
 }
 .content {
-    background-color: var(--black);
-    background: url(assets/img/bg-img.png);
-    display: flex;
-    min-height: 100vh;
+    background-image: url(assets/img/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh);
     width: 100%;
-    flex-wrap: wrap;
-    .logo-and-name {
+    .opac {
+        background-color: rgba(14, 14, 14, 0.5);
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        img {
-            width: 13vw;
-            height: min-content;
+        height: 100%;
+        .logo-and-name {
+            display: flex;
+            width: 100%;
+            img {
+                width: 13vw;
+                height: min-content;
+            }
+            h1 {
+                font-family: 'Arista 2.0 Alternate';
+                margin-top: 6vh;
+                font-size: 5vw;
+                margin-left: -2vw;
+                color: var(--white);
+            }
         }
-        h1 {
-            font-family: 'Arista 2.0 Alternate';
-            margin-top: 6vh;
-            font-size: 5vw;
-            margin-left: -2vw;
-            color: var(--white);
-        }
-    }
-    .slogan {
-        width: 100%;
-        margin-left: 4vw;
-        margin-top: -15vh;
-        
-        h1 { 
-            font-size: 4.5vw;
-            font-family: 'Arista 2.0';
-            color: var(--white);
-            -webkit-text-stroke-width: .1px;
-            -webkit-text-stroke-color: black;
-            -webkit-font-smoothing: antialiased;
-        }
-        span {
-            color: #009E5F;
+        .slogan {
+            width: 100%;
+            margin-left: 4vw;
+            margin-top: -15vh;
+            
+            h1 { 
+                font-size: 4.5vw;
+                font-family: 'Arista 2.0';
+                color: var(--white);
+                -webkit-text-stroke-width: .1px;
+                -webkit-text-stroke-color: black;
+                -webkit-font-smoothing: antialiased;
+            }
+            span {
+                color: #009E5F;
+            }
         }
     }
 }
 .login-form {
+    margin-top: 15vh;
     display: flex;
     width: 100%;
     form {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         text-align: center;
         width: 100%;
         h1 { 
             text-align: center;
             color: var(--white);
-            font-family: 'Quicksand';
-            font-weight: lighter;
+            font-family: 'Quicksand Semibold';
+            font-size: 4vw;
         }
-
+        .upper-container {
+            input, button {
+                width: 35vw;
+                height: 8vh;
+                border-radius: 2em;
+                border-width: 0;
+                margin-bottom: 5vh;
+                font-size: 2.5vw;
+            }
+            input[type=text] {
+                background-image: url(assets/img/user-icon.png);
+                background-position: 1.5vh 1.5vh;
+                background-size: 5vh;
+                background-repeat: no-repeat;
+                padding-left: 8vh;
+            }
+            input[type=password] {
+                background-image: url(assets/img/password-icon.png);
+                background-position: 1.8vh 1.8vh;
+                background-size: 4.2vh;
+                background-repeat: no-repeat;
+                padding-left: 8vh;
+            }
+            button {
+                background-color: var(--green);
+                font-family: 'Quicksand Bold';
+                color: var(--white);
+                width: 39vw;
+            }
+        }
+        .lower-container {
+            margin-top: -4vh;
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+            padding-left: 6vw;
+            a {
+                font-size: 2vw;
+                color: var(--white);
+            }
+        }
     }
 }

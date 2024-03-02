@@ -4,12 +4,8 @@
     --black: #0E0E0E;
 }
 @font-face {
-    font-family: "Arista 2.0 Alternate light"; src: url('assets/fonts/z-arista/Arista2.0/Alternate light.ttf') format('truetype'); 
-    font-family: "Arista 2.0 light";           src: url('assets/fonts/z-arista/Arista2.0 light.ttf') format('truetype');
-    font-family: "Arista 2.0 fat";             src: url('assets/fonts/z-arista/Arista2.0_fat.ttf') format('truetype');
     font-family: "Arista 2.0";                 src: url('assets/fonts/z-arista/Arista2.0.ttf') format('truetype');
     font-family: "Arista 2.0 Alternate";       src: url('assets/fonts/z-arista/Arista2.0Alternate.ttf') format('truetype');
-    font-family: "Arista 2.0 Alternate Full";  src: url('assets/fonts/z-arista/Arista2.0Alternate_full.ttf') format('truetype');
 }
 body {
     padding: 0;
@@ -63,4 +59,18 @@ main {
 .login-form {
     display: flex;
     width: 100%;
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        h1 { 
+            text-align: center;
+            color: var(--white);
+            font-family: 'Quicksand';
+            font-weight: lighter;
+        }
+
+    }
 }

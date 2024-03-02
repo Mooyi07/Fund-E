@@ -7,6 +7,7 @@
     <title>Fund-E | Login</title>
     <link rel="stylesheet" href="styles.scss">
     <link rel="icon" href="assets/img/logo.svg" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 </head>
 <body>
 <main>
@@ -26,7 +27,10 @@
         </div>
     </div>
     <div class="login-form">
-        
+        <form action="action_page.php" method="post">
+            <h1>LOGIN</h1>
+
+        </form>
     </div>
 </main>
 </body>

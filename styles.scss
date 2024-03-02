@@ -4,51 +4,59 @@
     --black: #0E0E0E;
 }
 @font-face {
-    font-family: "Arista 2.0";
-    src: url('assets/fonts/z-arista/Arista2.0/Alternate light.ttf') format('truetype'), 
-         url('assets/fonts/z-arista/Arista2.0 light.ttf') format('truetype'),
-         url('assets/fonts/z-arista/Arista2.0_fat.ttf') format('truetype'),
-         url('assets/fonts/z-arista/Arista2.0.ttf') format('truetype'),
-         url('assets/fonts/z-arista/Arista2.0Alternate.ttf') format('truetype'),
-         url('assets/fonts/z-arista/Arista2.0Alternate_full.ttf') format('truetype'),
+    font-family: "Arista 2.0 Alternate light"; src: url('assets/fonts/z-arista/Arista2.0/Alternate light.ttf') format('truetype'); 
+    font-family: "Arista 2.0 light";           src: url('assets/fonts/z-arista/Arista2.0 light.ttf') format('truetype');
+    font-family: "Arista 2.0 fat";             src: url('assets/fonts/z-arista/Arista2.0_fat.ttf') format('truetype');
+    font-family: "Arista 2.0";                 src: url('assets/fonts/z-arista/Arista2.0.ttf') format('truetype');
+    font-family: "Arista 2.0 Alternate";       src: url('assets/fonts/z-arista/Arista2.0Alternate.ttf') format('truetype');
+    font-family: "Arista 2.0 Alternate Full";  src: url('assets/fonts/z-arista/Arista2.0Alternate_full.ttf') format('truetype');
 }
 body {
     padding: 0;
     margin: 0;
-    display: flex;
-    background-color: var(--black);
 }
 main {
     display: flex;
     width: 100%;
+    background-color: var(--black);
 }
 .content {
     background-color: var(--black);
-    background-image: url(assets/img/bg-img.png);
+    background: url(assets/img/bg-img.png);
     display: flex;
+    min-height: 100vh;
     width: 100%;
     flex-wrap: wrap;
-    font-family: "Arista 2.0";
-    font-weight: bolder;
-    height: 100%;
     .logo-and-name {
         display: flex;
         width: 100%;
         img {
-            height: 30vh;
-            margin: 0%;
+            width: 13vw;
+            height: min-content;
         }
         h1 {
-            margin-top: auto;
-            margin-bottom: auto;
-            justify-content: left;
-            font-size: 85px;
-            color: 
+            font-family: 'Arista 2.0 Alternate';
+            margin-top: 6vh;
+            font-size: 5vw;
+            margin-left: -2vw;
+            color: var(--white);
         }
     }
     .slogan {
+        width: 100%;
+        margin-left: 4vw;
+        margin-top: -15vh;
+        
         h1 { 
-            font-style: ;
+            font-size: 4.5vw;
+            font-family: 'Arista 2.0';
+            color: var(--white);
+            -webkit-text-stroke-width: .1px;
+            -webkit-text-stroke-color: black;
+            -webkit-font-smoothing: antialiased;
+        }
+        span {
+            color: #009E5F;
         }
     }
 }

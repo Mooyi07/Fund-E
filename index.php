@@ -26,15 +26,7 @@
         </div>
     </div>
     <div class="login-form">
-        <div>
-            <h1>
-                Track your Expenses <br> 
-                Financial Discipline <br> 
-                Well-defined options <br>
-                Know your goals with <br>
-                <span>Fund-e</span>
-            </h1>
-        </div>
+        
     </div>
 </main>
 </body>

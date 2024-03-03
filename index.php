@@ -31,19 +31,21 @@
             </div>
         </div>
     </div>
-    <div class="login-form">
-        <form action="action_page.php" method="post">
-            <h1>LOGIN</h1>
-            <div class="upper-container">
-                <input id="uname" type="text" placeholder="Username" name="uname" required><br>
-                <input id="psw" type="password" placeholder="Password" name="psw" required><br>
-                <button type="submit">LOGIN</button>
-            </div>
-            <div class="lower-container">
-                <a href="#">Sign Up</a>
-                <a href="#">Forgot Password</a></span>
-            </div>
-        </form>
+    <div class="forms">
+        <div class="login-form">
+            <form action="action_page.php" method="post">
+                <h1>LOGIN</h1>
+                <div class="upper-container">
+                    <input id="uname" type="text" placeholder="Username" name="uname" required><br>
+                    <input id="psw" type="password" placeholder="Password" name="psw" required><br>
+                    <button type="submit">LOGIN</button>
+                </div>
+                <div class="lower-container">
+                    <a href="#">Sign Up</a>
+                    <a href="#">Forgot Password</a></span>
+                </div>
+            </form>
+        </div>
     </div>
 </main>
 </body>

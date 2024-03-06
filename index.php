@@ -22,7 +22,7 @@
             </div>
             <div class="slogan">
                 <h1>
-                    Track your transactions <br> 
+                    Track your Expenses <br> 
                     Financial Discipline <br> 
                     Well-defined options <br>
                     Know your goals with <br>

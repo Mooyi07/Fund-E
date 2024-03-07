@@ -41,7 +41,7 @@
                     <button type="submit">LOGIN</button>
                 </div>
                 <div class="lower-container">
-                    <a href="#">Sign Up</a>
+                    <a href="register/">Sign Up</a>
                     <a href="#">Forgot Password</a></span>
                 </div>
             </form>

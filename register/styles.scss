@@ -1,0 +1,106 @@
+:root {
+    --green: #009E5F;
+    --white: #F9F6EE;
+    --black: #0E0E0E;
+}
+@font-face {
+    font-family: "Arista 2.0 Alternate";    
+    src: url('assets/fonts/z-arista/Arista2.0Alternate.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Arista 2.0";              
+    src: url('assets/fonts/z-arista/Arista2.0.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Bold";          
+    src: url('assets/fonts/quicksand/Quicksand-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Semibold";      
+    src: url('assets/fonts/quicksand/Quicksand-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Light";      
+    src: url('assets/fonts/quicksand/Quicksand-Light.ttf') format('truetype');
+}
+body {
+    caret-color: transparent;
+    padding: 0;
+    margin: 0;
+    background-image: url(../assets/img/bg-img.png);
+    background-size: cover;
+    width: 100vw;
+  height: 100vh;    
+}
+
+main {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.8);
+    flex-wrap: wrap;
+    nav {
+        display: flex;
+        width: 100%;
+        margin-top: -5vh;
+        img {
+            width: 10vw;
+        }
+        h1 {
+            font-family: 'Arista 2.0 Alternate';
+            font-size: 5vw;
+            margin-left: -2vw;
+            color: var(--white);
+        }
+    }
+    .register-form {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: -10vh;
+        height: auto;
+        margin-bottom: 5vh;
+        form {
+            background-color: rgba(65,65,65, .8);
+            padding: 7vh;
+            font-size: 1.5em;
+            border-radius: 1em;
+            h1 {
+                margin-top: -3vh;
+                font-size: 3vw;
+                font-family: 'Arista 2.0 Alternate';
+                color: var(--black);
+                span {
+                    color: #009E5F;
+                }
+            }
+            h2 {
+                font-size: 1.5vw;
+                margin-top: -4vh;
+                font-family: 'Quicksand Light';
+            }
+            input {
+                width: 100%;
+                margin-bottom: 2vh;
+                height: 5vh;
+                border-radius: .5em;
+                border-width: 0;
+                background-color: #D9D9D9;
+            }
+            input::placeholder {
+                font-size: 3vh;
+            }
+            button {
+                background-color: #009E5F;
+                border-width: 0;
+                border-radius: .5em;
+                padding: 1vh;
+                color: #F9F6EE;
+                font-size: 1.5vw;
+            }
+        }
+    }
+}

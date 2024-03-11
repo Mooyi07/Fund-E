@@ -1,0 +1,81 @@
+:root {
+    --green: #009E5F;
+    --white: #F9F6EE;
+    --black: #0E0E0E;
+}
+@font-face {
+    font-family: "Arista 2.0 Alternate";    
+    src: url('../assets/fonts/z-arista/Arista2.0Alternate.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Arista 2.0";              
+    src: url('../assets/fonts/z-arista/Arista2.0.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Bold";          
+    src: url('../assets/fonts/quicksand/Quicksand-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Semibold";      
+    src: url('../assets/fonts/quicksand/Quicksand-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Light";      
+    src: url('../assets/fonts/quicksand/Quicksand-Light.ttf') format('truetype');
+}
+body {
+    caret-color: transparent;
+    padding: 0;
+    margin: 0;
+    background-color: var(--black);
+    background-size: cover;
+}
+main {
+    display: flex;
+    width: 100%;
+}
+.content {
+    width: 100%;
+    .opac {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .logo-and-name {
+            display: flex;
+            width: 100%;
+            img {
+                width: 13vw;
+                height: min-content;
+            }
+            h1 {
+                font-family: 'Arista 2.0 Alternate';
+                margin-top: 6vh;
+                font-size: 5vw;
+                margin-left: -2vw;
+                color: var(--white);
+            }
+        }
+    }
+    .welcome {
+        text-align: center;
+        justify-content: center;
+        h1 {
+            font-family: 'Quicksand Semibold';
+            color: var(--white);
+            font-size: 5vw;
+            span {
+                color: var(--green);
+            }
+        }
+        a {
+            font-family: 'Quicksand Light';
+            font-weight: bold;
+            background-color: #009E5F;
+            border-radius: 1em;
+            color: var(--white);
+            padding: 1vw;
+            font-size: 2.5vw;
+            cursor: pointer;
+        }
+    }
+}

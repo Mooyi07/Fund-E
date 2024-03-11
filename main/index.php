@@ -23,7 +23,7 @@
         </div>
         <div class="welcome">
             <h1>Welcome to <br><span>Fund-e</span>!</h1>
-            <a ref="home/">PROCEED</a>
+            <a href="home/">PROCEED</a>
         </div>
     </div>
 </main>

@@ -1,7 +1,3 @@
-<?php 
-    session_abort();
-    session_unset();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

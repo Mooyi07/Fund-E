@@ -1,0 +1,96 @@
+:root {
+    --green: #009E5F;
+    --white: #F9F6EE;
+    --black: #0E0E0E;
+}
+@font-face {
+    font-family: "Arista 2.0 Alternate";    
+    src: url('../../assets/fonts/z-arista/Arista2.0Alternate.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Arista 2.0";              
+    src: url('../../assets/fonts/z-arista/Arista2.0.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Bold";          
+    src: url('../../assets/fonts/quicksand/Quicksand-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Semibold";      
+    src: url('../../assets/fonts/quicksand/Quicksand-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand Light";      
+    src: url('../../assets/fonts/quicksand/Quicksand-Light.ttf') format('truetype');
+}
+body {
+    caret-color: transparent;
+    padding: 0;
+    margin: 0;
+    background-color: var(--black);
+    background-size: cover;
+}
+nav {
+    display: flex;
+    width: 100%;
+    border-color: #4E4E4E;
+    border-bottom: #4E4E4E 0.1vh solid;
+    .tabs {
+        display: flex;
+        width: 100%;
+        img {
+            width: 13vh;
+        }
+        a {
+            font-family: 'Quicksand Light';
+            font-weight: bold;
+            color: var(--white);
+            padding: 1.7vw;
+            text-align: center;
+            justify-content: center;
+            font-size: 2.5vw;
+            
+        }
+        a:link {
+            text-decoration: none;
+        }
+    }
+    #gear {
+        height: 11vh;
+        padding: .7vw;
+        filter: brightness(0) saturate(100%) invert(36%) sepia(64%) saturate(3055%) hue-rotate(138deg) brightness(94%) contrast(101%);
+    }
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .top-content {
+        display: flex;
+        width: 100%;
+        .profile {
+            background-color: #1A1A1A;
+            padding: 2vw;
+            display: flex;
+            width: 100%;
+            border-radius: 1em;
+            .details {
+                color: var(--white);
+                font-family: 'Quicksand Bold';
+                justify-content: center;
+                text-align: center;
+            }
+        }
+        .balance {
+            background-color: #1A1A1A;
+            padding: 2vw;
+            width: 100%;
+            h1 {
+                color: var(--white);
+            }
+            h2 {
+                color: var(--green);
+            }
+        }
+    }
+}
